@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 3rem auto;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.list {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.list-item {
+  border: 1px solid black;
+  padding: 0.8rem;
+  max-width: 70%;
+  margin: 0.8rem auto;
+  position: relative;
+  overflow-wrap: break-word;
+}
+
+.contain-element {
+  position: relative;
+  display: flex;
+}
+
+.task-text {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0 2rem;
+  padding: 0.5rem;
+  width: 80%;
+}
+
+.btn-close {
+  font-size: 1rem;
+  padding: 0.2rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.form-task {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.form-input {
+  width: 85%;
+  border: none;
+  border-bottom: 1px solid black;
+  background: none;
+  padding: 0.4rem;
+}
+
+.btn {
+  background: red;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 40px;
+  margin-left: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.animated {
+  -webkit-animation-duration: 0.06s;
+  animation-duration: 800ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@media (max-width: 850px) {
+  .form-input {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-input {
+    width: 65%;
+  }
+}
